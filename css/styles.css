@@ -1,0 +1,516 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+/*-----------------general----------------*/
+
+body{
+	background-color: #f6ffc7;
+}
+
+.container-fluid{
+	margin: 0 45px;
+}
+
+a{
+	text-decoration: none;
+}
+
+p{
+	margin-bottom: 0;
+}
+
+button{
+	border: none;
+	padding: 3px 20px;
+}
+
+h1, h2, h3{
+	font-weight: 700;
+}
+
+h1{
+	margin-left: 30px;
+}
+
+input{
+	padding: 8px;
+}
+
+textarea{
+	resize: none;
+	padding: 5px;
+	height: 140px;
+}
+
+input:focus-visible, textarea:focus-visible{
+	outline: none;
+}
+
+
+i{
+	color: #fff;
+}
+
+table{
+    width: 100%;
+}
+
+thead{
+	color: #fff;
+    background-color: #ffa12c;
+}
+
+/* ------------------------NAV----------------------------- */
+
+.bg-nav{
+	background-color: #3a2e65;
+}
+
+.navbar{
+	position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar .logo{
+	width: 65px;
+}
+
+.navbar-collapse{
+	justify-content: center;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+	color: red;
+}
+
+.navbar .navbar-nav .nav-item{
+	margin: 0 15px;
+}
+
+.borderBottomRed{
+	border-bottom: 3px solid red;
+}
+
+.borderBottomWrite{
+	border-bottom: 1px solid #fff;
+}
+
+.navbar .cart{
+	display: flex;
+	align-items: center;
+}
+
+.navbar .cart i:hover{
+	cursor: pointer;
+}
+
+.navbar .cart .fa-shopping-cart{
+	font-size: 40px;
+}
+
+.navbar .cart span{
+	padding: 0px 10px;
+	color: #fff;
+	background-color: red;
+	border-radius: 15px;
+	font-weight: 700;
+}
+
+/* ---modal--- */
+
+.modal .modal-content{
+	background-color: #f6ffc7;
+}
+
+thead th{
+    padding: 10px;
+}
+
+tbody th{
+    font-weight: 400;
+    padding: 5px;
+    border-bottom: 2px solid;
+}
+
+.textCenter{
+	text-align: center;
+}
+
+.modal .modal-body .botonEliminar .cruz{
+	color: #000;
+	padding: 0 6px;
+}
+
+/* ---- */
+
+/* ---------------------FIN NAV ---------------------*/
+
+/* ----------------INDEX---------------- */
+
+.containerMain{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-image: url("../img/595064.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.containerMain .inicio{
+    transition-duration:.3s;
+}
+
+.containerMain .inicio:hover{
+    transform: scale(1.1);
+    transition-duration:.3s;
+}
+
+.containerCardsMain{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding: 35px 0;
+}
+
+.containerCardsMain .cardMain{
+	position: relative;
+	width: 280px;
+	height: 370px;
+	transform-style: preserve-3d;
+	transition: all 0.5s ease;
+	box-shadow: 0px 14px 12px -2px rgba(0,0,0,1);
+}
+
+.containerCardsMain .cardMain:hover{
+	transform: rotateY(180deg);
+}
+
+.containerCardsMain .cardMain .front, .containerCardsMain .cardMain .back{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.containerCardsMain .cardMain .back{
+	background-image: url('../img/contactoBack.jpg');
+    color: #000;
+    transform: rotateY(180deg); 
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0 20px;
+}
+
+.containerCardsMain .cardMain .back p{
+	text-align: center;
+}
+
+.containerCardsMain .cardMain .back i{
+	color: #000;
+	font-size: 50px;
+}
+
+.containerCardsMain .cardMain .back .buttonMain{
+	padding: 10px;
+	border-radius: 20px;
+	background-color: #3a2e65;
+	color: #fff;
+}
+
+.containerUs{
+	margin: 120px 60px;
+}
+
+.containerUs p{
+	font-size: 1.4rem;
+}
+
+/* -----------------FIN INDEX------------ */
+
+/* -----------PRODUCTOS--------------------- */
+
+.containerSection{
+	margin-top: 100px;
+	margin-bottom: 30px;
+}
+
+.containerSection .containerCards{
+    margin: auto;
+    max-width: 1370px;
+    display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.containerSection .containerCards .cardComic{
+	display: flex;
+	flex-direction: column;
+	padding: 15px;
+	width: 160px;
+	margin: 10px 15px;
+	box-sizing: content-box;
+	border: 0 solid rgba(0, 0, 0, 0.125);
+    border-radius: 20px;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    background-color: #f6ffc7;
+}
+
+.containerSection .containerCards .cardComic img {
+    width: 100%;
+	margin-bottom: 10px;
+}
+
+.containerSection .containerCards .cardComic:hover{
+	box-shadow: 0 .5rem 1rem rgba(0,0,0,.85);
+}
+
+.containerSection .containerCards .cardComic img{
+	width: 100%;
+}
+
+.containerSection .containerCards .cardComic .cardInfo{
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+}
+
+.containerSection .containerCards .cardComic .cardInfo .botonAgregar{
+	color: #FFF;
+	background-color: #3a2e65;
+
+}
+
+.containerSection .containerCards .cardComic .cardInfo .cardComic .botonAgregar:active{
+	transform: translateY(3px);
+}
+
+.containerSection .containerArrow{
+	display: flex;
+	justify-content: center;
+}
+
+.containerSection .containerArrow button{
+	background-color: #3a2e65;
+}
+
+.containerSection .containerArrow .arrowRight, .containerSection .containerArrow .arrowLeft{
+	padding: 13px;
+	margin: 0 10px;
+	border-radius: 10px;
+}
+
+.containerArrow i{
+	font-size: 30px;
+}
+
+.deactivate{
+	pointer-events: none;
+	opacity: 70%;
+}
+
+/* ---------------FIN PRODUCTOS------------- */
+
+
+/* ---------CONTACTO----------- */
+
+.containerSection .containerForm{
+	display: flex;
+	justify-content: space-between;
+	background-color: #3a2e65;
+	color: #fff;
+	margin: 0 30px;
+	border-radius: 30px;
+	padding: 30px;
+}
+
+.containerSection .containerForm .containerText{
+	width: 40%;
+}
+
+.containerSection .containerForm .containerText p{
+	font-size: 1.5rem;
+}
+
+.containerSection .containerForm .form{
+	width: 50%;
+	border-radius: 20px;
+}
+
+.containerSection .containerForm .form .elementForm{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 5px;
+}
+
+.containerSection .containerForm .form .elementForm p{
+	visibility: hidden;
+	color: red;
+}
+
+.containerSection .containerForm .form .buttonForm button{
+	display: block;
+	margin: 0 auto;
+}
+
+.error{
+	border: 3px solid red;
+}
+
+/* ---------FIN CONTACTO----------------*/
+
+/* ---------FOOTER----------------*/
+
+.containerFooter{
+	color: #FFF;
+	background-color: #000;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.containerFooter .contact, .containerFooter .redes{
+	margin: 30px;
+}
+
+.containerFooter .contact p{
+	margin-bottom: 0;
+}
+
+.containerFooter .redes .logosRedes{
+	width: 220px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.containerFooter .redes .logosRedes i{
+	font-size: 30px;
+}
+
+.containerFooter .redes .logosRedes .fa-facebook:hover{
+	color: #2d88ff;
+}
+
+.containerFooter .redes .logosRedes .fa-instagram:hover{
+	color: #f52626;
+
+}
+
+.containerFooter .redes .logosRedes .fa-twitter:hover{
+	color: #52a8e7;
+}
+
+.containerFooter .redes .logosRedes .fa-whatsapp:hover{
+	color: #4adf83;
+}
+
+@media only screen and (max-width: 768px){
+	.navbar .navbar-collapse{
+		order: 3
+	}
+	
+	.containerMain{
+		background-image: url("../img/main-bg04.png");
+	}
+
+	.containerMain .inicio{
+		width: 80%;
+	}
+
+	.containerCardsMain .cardMain{
+		margin-bottom: 25px;
+	}
+
+	.containerUs{
+	margin: 30px 60px;
+	}
+
+	.containerUs p{
+		font-size: 1rem;
+	}
+
+	.containerSection .containerForm{
+		flex-direction: column;
+	}
+
+	.containerSection .containerForm .containerText{
+		width: 100%;
+	}
+
+	.containerSection .containerForm .containerText p{
+		font-size: 1rem;
+	}
+
+	.containerSection .containerForm .form{
+		width: 100%;
+		margin-top: 35px;
+	}
+
+	.containerFooter{
+		flex-direction: column;
+	}
+
+	.containerFooter .redes .logosRedes{
+		width: 100%;
+		justify-content: space-around;
+	}
+}
+
+@media only screen and (max-width: 480px){
+	.navbar .logo{
+		display: none;
+	}
+	
+
+	.containerMain{
+	background-image: url("../img/5108356mov.jpg");
+	}
+
+	.containerCardsMain .cardMain:hover{
+		transform: none;
+	}
+
+	.containerCardsMain .cardMain .front{
+		display: none;
+	}
+
+	.containerCardsMain .cardMain .back{
+		transform: none;
+	}
+
+	.containerSection .containerCards .cardComic{
+		flex-direction: row;
+		justify-content: space-between;
+		width: 80%;
+	}
+
+	.containerSection .containerCards .cardComic img{
+		width: 50%;
+	}
+
+	.containerSection .containerCards .cardComic  .cardInfo{
+		justify-content: center;
+		width: 45%;
+	}
+
+	.containerFooter .redes .logosRedes{
+		justify-content: space-between;
+	}
+}
