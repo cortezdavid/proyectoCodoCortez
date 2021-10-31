@@ -298,7 +298,7 @@ tbody th{
 
 }
 
-.containerSection .containerCards .cardComic .cardInfo .cardComic .botonAgregar:active{
+.containerSection .containerCards .cardComic .cardInfo .botonAgregar:active{
 	transform: translateY(3px);
 }
 
